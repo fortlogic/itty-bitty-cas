@@ -1,5 +1,10 @@
 #lang typed/racket/base
 
+(provide Expression Variable
+         Unary-Operator Binary-Operator
+         (struct-out unary-expression)
+         (struct-out binary-expression))
+
 (require (for-syntax racket/base
                      syntax/parse))
 
